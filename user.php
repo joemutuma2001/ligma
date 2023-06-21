@@ -10,6 +10,7 @@ if(isset($_POST['submit'])){
     $con = mysqli_connect("localhost", "root", "your_password", "crud");
 
     $result=mysqli_query($con,$sql);
+    
     if($result){
         echo"Data inserted successfully";
     }else{
